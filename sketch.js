@@ -1,4 +1,3 @@
-
 let cur=0;
 let poocur=0;
 let ranpoo;
@@ -19,11 +18,7 @@ function setup() {
   
 }
 
-function draw() {
-  // put drawing code here
-  background(0);
-  startGame();
-}
+
 
 function startGame(){
   displayScore();
@@ -83,7 +78,7 @@ function displayScore() {
   textSize(20);
   textAlign(CENTER);
 
-  //Add font
+  
   textFont('Courier New');
   fill(255, 0, 0);
   text(`Score : ${score}`, width/8, height/8);
@@ -94,4 +89,14 @@ function mousePressed(){
     startGame();
     loop();
   }
+}
+let bgImage;
+
+function preload() {
+  bgImage = loadImage('zed.png'); 
+}
+
+function draw() {
+  background(bgImage);
+  startGame();
 }
