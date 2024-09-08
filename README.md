@@ -13,12 +13,7 @@ Long Description about project. This project do that. This project is awesome...
 4. [Rebecca Mariam Ebby](https://github.com/REBECCAMARIAMEBBY27)
 ## Link to product walkthrough
 [link to video](Link Here)
-## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
-## Libraries used
-Library Name - Version
+
 ## How to configure
-Instructions for setting up project
-## How to Run
-Instructions for running
+[click on me to get to our game](https://editor.p5js.org/nandanasanil973/sketches/_ntoINp4T) <br>
+have fun playing :)
