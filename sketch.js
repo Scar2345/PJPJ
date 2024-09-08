@@ -17,15 +17,25 @@ function setup() {
   }
   
 }
-
-
+function drawPoopShape(x, y) {
+  beginShape();
+  vertex(x - 20, y + 15); 
+  vertex(x - 10, y - 10); 
+  vertex(x, y - 15);      
+  vertex(x + 10, y - 10);  
+  vertex(x + 20, y + 15);  
+  vertex(x + 10, y + 25);  
+  vertex(x - 10, y + 25);  
+  endShape(CLOSE);         
+}
 
 function startGame(){
   displayScore();
-  fill(77, 61, 18)
-  ellipse(ranpoo,poocur,32,50);
+  fill(77, 61, 18);
+  drawPoopShape(ranpoo, poocur);
   fill(255)
   ellipse(ran,cur,32,40);
+  fill(255, 215, 0)
   rect(mouseX,height-45,60,32);
   cur+=curspeed
   poocur+=6
@@ -98,5 +108,5 @@ function preload() {
 
 function draw() {
   background(bgImage);
-  startGame();
+  startGame()
 }
