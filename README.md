@@ -14,8 +14,8 @@ Catch the eggs, avoid the poop.
 ## Game walkthrough
 
 
-https://github.com/user-attachments/assets/a31eb146-9458-47d7-9520-eee89ff2f133
 
+https://github.com/user-attachments/assets/72f866d3-9226-4735-b225-c2b2a384c7da
 
 
 ## How to configure
