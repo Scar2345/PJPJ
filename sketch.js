@@ -35,15 +35,18 @@ function startGame(){
   drawPoopShape(ranpoo, poocur);
   fill(255)
   ellipse(ran,cur,32,40);
-  fill(255, 215, 0)
-  rect(mouseX,height-45,60,32);
+  image(basketImage, mouseX, height - 40, 70, 45);
   cur+=curspeed
   poocur+=6
 
   if (((cur>=height-45))&(((mouseX+60)>=ran)&(mouseX<=ran))) {
     score +=1;
     cur=0;
-    curspeed+=0.25;
+     if(curspeed<=8){
+      curspeed+=0.25;
+    }else{
+      curspeed+=0.05;
+    }
     ran=random(45,width-45);
   }
   if (cur>=height){
@@ -104,6 +107,7 @@ let bgImage;
 
 function preload() {
   bgImage = loadImage('zed.png'); 
+  basketImage = loadImage('basket.png');
 }
 
 function draw() {
